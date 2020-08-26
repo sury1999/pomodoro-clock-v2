@@ -18,10 +18,10 @@ function SessionLength (props) {
     }
 
     return (
-        <section>
-            <button  disabled = {props.isPlay === true ? 'disabled' : ''} onClick = {decreaseCounter}> Down </button>
-            <p>{props.sessionLength}</p>
-            <button  disabled = {props.isPlay === true ? 'disabled' : ''} onClick = {increaseCounter}> Up </button>
+        <section id="session-label">Session Length
+            <button  disabled = {props.isPlay === true ? 'disabled' : ''} onClick = {decreaseCounter} id="session-decrement"> Down </button>
+            <p id = "session-length">{props.sessionLength}</p>
+            <button  disabled = {props.isPlay === true ? 'disabled' : ''} onClick = {increaseCounter} id = "session-increment"> Up </button>
         </section>
     );
 
